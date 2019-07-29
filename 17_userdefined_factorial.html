@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var no=parseInt(prompt("Enter the number to find factorial:"));
+		document.getElementById("demo").innerHTML=document.write("Factorial="+myfunction(no));
+		function myfunction(f)
+		{
+			var fact=1,i=1;
+			while(i<=f)
+			{
+				fact=fact*i;
+				i++;
+			}
+			return fact;	
+		}
+	</script>
+</head>
+<body>
+	<p id="demo"></p>
+</body>
+</html>
