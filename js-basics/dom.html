@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <ul id="nav">
+        <li>Home</li>
+        <li>About US</li>
+        <li>Conatct US</li>
+        <li>Services</li>
+        <li>More About Us</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      another container
+    </div>
+    <script>
+      let main = document.getElementById("main");
+      //   console.log(main);
+      let nav = document.getElementById("nav");
+      //   console.log(nav);
+      nav.innerHTML;
+
+      let containers = document.getElementsByClassName("container");
+      //   console.log(containers);
+      let sel = document.querySelector("#nav");
+      //   console.log(sel);
+
+      let sel2 = document.querySelectorAll("#nav>li");
+      console.log("selector returns ", sel2);
+    </script>
+  </body>
+</html>
