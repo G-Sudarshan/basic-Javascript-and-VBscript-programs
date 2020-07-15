@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string functions</title>
+</head>
+<body>
+<script type="text/javascript">
+	var str=" This is a string ";
+	a=str.toUpperCase();
+	document.write("<br/>upper case : ",a);
+	b=str.toLowerCase();
+	document.write("<br/>Lower Case : ",b);
+	c=str.length;
+	document.write("<br/>Length is : ",c);
+	d=str.concat("second string ");
+	document.write("<br/>",d);
+	e=str.search("is");
+	document.write("<br/>search result : ",e);
+	var f=str.replace("is","are");
+	document.write("<br/>"+f+"<br/>");
+	var g=str.slice(2,5);
+	document.write(g+"<br/>");
+	var str2="this is a string 2";
+	var h=str2.link("https://www.google.com");
+	document.write(h+"<br/>");
+	var j=str.split('').reverse().join('')
+	document.write("<br/>",j);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>select case in vbscript</title>
+</head>
+<body>
+	<script type="text/vbscript" language="vbscript">
+		
+		dim a:a=CInt(prompt("enter a"))
+		dim b:b= CInt(prompt("enter b"))
+		dim c:c= CInt(InputBox("1.addition 2.subtracton 3.multiplication 4.division"))
+		dim d
+		select case c
+		case "1"
+		d=a+b
+		document.write("this is case 1 : "&d)
+		case "2"
+		d=a-b
+		document.write("this is case 2 : "&d)
+		case "3"
+		d=a*b
+		document.write("this is case 3 : "&d)
+		case "4"
+		d=a/b
+		document.write("this is case 4 : "&d)
+		case else 
+		document.write("you have entered wrong choice")
+		end select
+	</script>
+
+</body>
+</html>

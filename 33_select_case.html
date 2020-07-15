@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/vbscript">
+		Dim a:a=CInt(InputBox("Enter ur choice---1.Addition 2.Subtraction 3.Multiplication 4.Division 5.Modulus"))
+		Dim no1:no1=50
+		Dim no2:no2=5
+		Dim res
+		Select Case a
+			case 1 
+					res=no1+no2
+					document.write("Addition is "&res)
+			case 2 
+					res=no1-no2
+					document.write("Subtraction is "&res)
+			case 3 
+					res=no1*no2
+					document.write("Multiplication is "&res)
+			case 4 
+					res=no1/no2
+					document.write("Division is "&res)
+			case 5 
+					res=no1 MOD no2
+					document.write("Modulus is "&res)
+			case else
+					document.write("Invalid operator")
+			End Select
+	</script>
+</body>
+</html>

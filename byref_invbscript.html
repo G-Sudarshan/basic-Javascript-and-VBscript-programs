@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pass by reference</title>
+</head>
+<body>
+	<script type="text/vbscript" language="vbscript">
+		
+		function fnadd(byref num1 , byref num2)
+		num1=4
+		num2=5
+		end function 
+		dim x,y
+		x=6 
+		y=4
+
+		res=fnadd(x,y)
+		document.write("the value x is "&x&"<br/>")
+		document.write("the value y is "&y&"<br/>")
+
+	</script>
+
+</body>
+</html>

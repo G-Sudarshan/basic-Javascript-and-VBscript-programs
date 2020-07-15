@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function validation()
+		{
+			var username=document.login.username.value;
+			var password=document.login.password.value;
+			var str=username.slice(0,1);
+			if(password.length<8)
+			{
+				alert("The password must be greater than 8 characters");
+			}
+			else if(username=="") 
+			{
+				alert("username cant be nll");
+			}
+			else
+				document.write("login sucessful");
+		}
+	</script>
+</head>
+<body align="center">
+	<h1>LOGIN FORM</h1>
+	<h3>
+		<form name="login" onsubmit="return validation()" method="post">
+			Username:<input type="text" name="username" value=""><br/><br/>
+			Password:<input type="password" name="password" value=""><br/><br/>
+			<input type="submit" name="submit" value="SUBMIT">
+		</form>
+	</h3>
+</body>
+</html>
