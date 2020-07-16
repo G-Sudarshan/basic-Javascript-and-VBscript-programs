@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Math object in HTML</title>
+  </head>
+  <body style="color: white; background-color: black;">
+    <div class="container">
+      Math object
+    </div>
+    <script>
+      let m = Math;
+      console.log(m);
+
+      console.log("The value of Math.E ", Math.E);
+      console.log("The value of Math.PI ", Math.PI);
+      //   E: 2.718281828459045;
+      //   LN10: 2.302585092994046;
+      //   LN2: 0.6931471805599453;
+      //   LOG10E: 0.4342944819032518;
+      //   LOG2E: 1.4426950408889634;
+      //   PI: 3.141592653589793;
+      //   SQRT1_2: 0.7071067811865476;
+      //   SQRT2: 1.4142135623730951;
+
+      //Functions
+      let a = 34.5645;
+      let b = 89;
+
+      console.log("the value of a and b is ", a, b);
+      console.log(
+        "the rouned value of a and b is ",
+        Math.round(a),
+        Math.round(b)
+      );
+
+      console.log("3^2 : ", Math.pow(3, 2));
+      console.log("square root 36 : ", Math.sqrt(36));
+      console.log("square root 40 : ", Math.sqrt(40));
+
+      console.log("Absolute value of -5.66 : ", Math.abs(-5.66));
+
+      //Trignonmetric functions
+
+      console.log("The value of sin(pi/2) is : ", Math.sin(Math.PI / 2));
+
+      // min max
+
+      console.log("minimum value of 4,5,6 is : ", Math.min(4, 5, 6));
+      console.log("maximum value of 4,5,6 is : ", Math.max(4, 5, 6));
+
+      //grnrrate random no.
+      let r = Math.random();
+      let r1 = Math.round(1 + 99 * Math.random());
+      let r50_60 = Math.round(50 + 10 * Math.random());
+      console.log("The random no. is : ", r50_60);
+    </script>
+  </body>
+</html>
