@@ -1,0 +1,31 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dolo Dance Academy
+    style
+      include ../static/style.css
+  body 
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Contact]
+            li #[a(href="/") Services]
+    section#introSection
+        div Dolo Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mision
+        div.card
+          h3 Dance perfection
+        div.card
+          h3 Dance the way you like 
+        div.card
+          h3 Expert Teaching
+    section#sponcerSection
+        h2 Our Sponcers
+    footer#footer
+        |our footer here
+    script
+      include ../static/index.js    
