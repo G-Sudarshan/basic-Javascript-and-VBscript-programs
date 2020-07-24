@@ -1,20 +1,10 @@
-//- index.pug
-doctype html
-html
-  head
-    title Dolo Dance Academy
+extends base.pug
+block scripts
+    script(src='/static/index.js')
+block style
     style
       include ../static/style.css
-  body 
-    nav#navbar
-        ul
-            div#logo
-              img(src="/static/img/logo.png")
-              | DDA
-            li #[a(href="/") Home]
-            li #[a(href="/") About]
-            li #[a(href="/") Contact]
-            li #[a(href="/") Services]
+block content
     section#introSection
         div Dolo Dance Academy
         div.small Eat Sleep Dance Repeat
@@ -49,7 +39,3 @@ html
             img(src="/static/img/logo2.png", alt="sponcer image", class="spImage")
             img(src="/static/img/logo3.png", alt="sponcer image", class="spImage")
             img(src="/static/img/logo4.png", alt="sponcer image", class="spImage")
-    footer#footer
-        | Copyright © 2020 DoloDanceAcademy.com | All Rights Reserved
-    script
-      include ../static/index.js    
