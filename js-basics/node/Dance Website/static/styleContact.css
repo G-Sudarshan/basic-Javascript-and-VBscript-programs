@@ -30,6 +30,7 @@ h1 {
   color: white;
   background-color: rgb(44, 120, 206);
   cursor: pointer;
+  font-weight: bold;
 }
 
 .container {

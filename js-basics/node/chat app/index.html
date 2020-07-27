@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iChat -Realtime Node Socket.io chat App</title>
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="logo" class="logo" />
+    </nav>
+    <div class="container">
+      <div class="message left">Harry: How are you</div>
+      <div class="message right">Rohan: I am fine</div>
+    </div>
+    <div class="send">
+      <form action="#" id="send-container">
+        <input
+          style="
+            width: 80%;
+            border: 2px solid green;
+            border-radius: 6px;
+            height: 30px;
+            background-color: black;
+            color: green;
+            font-size: 16px;
+          "
+          placeholder="  Type a message...."
+          type="text"
+          name="messageInp"
+          id="messageInp"
+        />
+        <button class="btn" type="submit">send</button>
+      </form>
+    </div>
+  </body>
+</html>
