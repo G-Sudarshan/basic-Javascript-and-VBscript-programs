@@ -41,6 +41,21 @@ body {
   clear: both;
 }
 
+.group-joined {
+  float: none;
+  clear: both;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 15px;
+  padding: 5px;
+  /* align-content: center; */
+  text-align: center;
+  border-radius: 100px;
+  background: black;
+  color: green;
+  border: 1px solid green;
+}
+
 #send-container {
   display: block;
   margin: auto;
