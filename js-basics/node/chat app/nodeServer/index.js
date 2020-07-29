@@ -1,6 +1,6 @@
 //Node server which will handle socketio connection
 
-const io = require("socket.io")(88000);
+const io = require("socket.io")(8000);
 
 const users = {};
 
@@ -19,11 +19,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", (message) => {
-    socket.broadcast.emit("left", {
-      users[socket.id],
-      delete users[socket.id];
-    });
+    socket.broadcast.emit("left", users[socket.id]);
+    delete users[socket.id];
   });
-
 });
-
