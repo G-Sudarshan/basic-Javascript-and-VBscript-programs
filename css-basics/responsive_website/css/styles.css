@@ -1,6 +1,11 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .navbar {
@@ -11,7 +16,7 @@
   position: sticky;
   top: 0;
   cursor: pointer;
-  /* background-color: black; */
+  background-color: black;
 }
 
 .nav-list {
@@ -49,6 +54,7 @@
 .nav-list li a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 
 .nav-list li a:hover {
@@ -120,14 +126,16 @@
   background: none;
   color: white;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .btn-sm {
   padding: 6px 10px;
   vertical-align: middle;
+  font-size: 16px;
 }
 
-.secRight {
+.section {
   height: 500px;
   display: flex;
   align-items: center;
@@ -138,4 +146,59 @@
 
 .paras {
   padding: 0 65px;
+}
+
+.sectionTag {
+  padding: 16px 0;
+}
+
+.section-left {
+  flex-direction: row-reverse;
+}
+
+.thumbnail img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  margin-top: 19px;
+}
+.contact {
+  background-color: rgb(207, 203, 203);
+  /* color: white; */
+  height: 733px;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px;
+}
+
+.form {
+  max-width: 1200px;
+  margin: 25px auto;
+}
+
+.form-input {
+  width: 100%;
+  margin: 14px 0;
+  font-size: 20px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  padding: 5px 3px;
+}
+
+.btn-dark {
+  color: black;
+  border: 2px solid grey;
+}
+
+.text-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
