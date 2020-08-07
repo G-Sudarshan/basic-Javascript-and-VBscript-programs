@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iEducate - Transforming online education</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul class="nav-list">
+    <nav class="navbar h-nav-resp">
+      <ul class="nav-list v-class-resp">
         <div class="logo">
           <img src="img/logo.jpg" alt="logo" />
         </div>
@@ -18,9 +19,15 @@
         <li><a href="#contact">Contact Us</a></li>
       </ul>
 
-      <div class="rightNav">
+      <div class="rightNav v-class-resp">
         <input type="text" name="search" id="search" />
         <button class="btn btn-sm">search</button>
+      </div>
+
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </nav>
 
@@ -48,7 +55,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="services">
       <div class="paras">
         <p class="sectionTag text-big">The end of your search is here</p>
         <p class="sectionSubTag text-small">
@@ -131,7 +138,7 @@
       </div>
       <div class="thumbnail">
         <img
-          src="https://source.unsplash.com/900x900/?javascript,apple"
+          src="https://source.unsplash.com/900x900/?javascript,apple,nature,happy"
           height="100px"
           width="100px"
           class="imgFluid"
@@ -141,7 +148,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="text-center">Contact Us</h2>
       <div class="form">
         <input
@@ -173,13 +180,20 @@
           class="form-input"
           placeholder="Elaborate your concern"
         ></textarea>
-        <button class="btn btn-dark">Submit</button>
+        <button class="btn btn-dark btn-sm">Submit</button>
       </div>
     </section>
     <footer>
       <p class="text-footer">
-        Copyright &copy; 2020 | www.iEducate.com | All rights reserved
+        Copyright &copy; 2020 | &nbsp;<a
+          href="#"
+          style="text-decoration: none; color: white;"
+        >
+          www.iEducate.com
+        </a>
+        &nbsp; | All rights reserved
       </p>
     </footer>
+    <script src="js/resp.js"></script>
   </body>
 </html>
